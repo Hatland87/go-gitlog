@@ -29,7 +29,7 @@ func getCommitsValues(commit string) Commit {
 	commitArr := strings.Split(commit, "\n")
 
 	commitDate := commitArr[0]
-	numFile := len(commit) - 1
+	numFileChanged := len(commitArr) - 1
 
 	var numInsertions int
 	var numDeletions int
@@ -45,7 +45,7 @@ func getCommitsValues(commit string) Commit {
 
 	return Commit{
 		CommitDate:     commitDate,
-		NumFileChanged: numFile,
+		NumFileChanged: numFileChanged,
 		NumInsertions:  numInsertions,
 		NumDeletions:   numDeletions,
 	}
