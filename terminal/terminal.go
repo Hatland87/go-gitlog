@@ -6,8 +6,6 @@ import (
 	"strings"
 )
 
-// "git log asdf asdf asdf"
-
 func Run(arg string) string {
 
 	arr := strings.Split(arg, " ")
