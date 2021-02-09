@@ -6,7 +6,7 @@ Script takes one argument, git repository url
 Output a json file with stats from each commit  
 Values:
  - CommitDate
- - NumFiles
+ - NumFileChanged
  - NumInsertions
  - NumDeletions
 

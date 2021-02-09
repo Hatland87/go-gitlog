@@ -6,10 +6,10 @@ import (
 )
 
 type Commit struct {
-	CommitDate    string
-	NumFiles      int
-	NumInsertions int
-	NumDeletions  int
+	CommitDate     string
+	NumFileChanged int
+	NumInsertions  int
+	NumDeletions   int
 }
 
 func Parse(rawOutput string) []Commit {
@@ -44,10 +44,10 @@ func getCommitsValues(commit string) Commit {
 	}
 
 	return Commit{
-		CommitDate:    commitDate,
-		NumFiles:      numFile,
-		NumInsertions: numInsertions,
-		NumDeletions:  numDeletions,
+		CommitDate:     commitDate,
+		NumFileChanged: numFile,
+		NumInsertions:  numInsertions,
+		NumDeletions:   numDeletions,
 	}
 }
 
