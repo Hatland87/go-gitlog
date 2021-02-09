@@ -3,7 +3,7 @@ Inspired by https://didoo.medium.com/measuring-the-impact-of-a-design-system-7f9
 
 Script takes one argument, git repository url
 
-Output a json file with stats from each commit
+Output a json file with stats from each commit  
 Values:
  - CommitDate
  - NumFiles
